@@ -1,0 +1,28 @@
+{
+  "name": "tecza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "sass": "node-sass styles/scss/main.scss styles/css/style.css -w",
+    "devstart": "nodemon server.js"
+  },
+  "author": "Maciej Macuga",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cookieparser": "^0.1.0",
+    "crud": "^0.0.28",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "html": "^1.0.0",
+    "node-sass": "^8.0.0",
+    "session": "^0.1.0",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

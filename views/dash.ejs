@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/scss/main.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Tęcza | Wycieczki grupowe dla każdego</title>
+    </head>
+    <body>
+        <div class="flex-wrapper">
+        <aside class="aside">
+            <div class="aside__logo-box">
+                <img src="img/logo.png" alt="Logo of our Company" class="header__logo">
+            </div>
+            <nav class="aside__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link">Strona główna</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/#section-offers-id" class="nav__link">Oferta</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/#section-last-id" class="nav__link">Ostatnie miejsca</a>
+                        </li>
+                    <li class="nav__item">
+                        <a href="/#section-faq-id" class="nav__link">FAQ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/#section-contact-id" class="nav__link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <img src="../../img/icons/phone.png" alt="" />
+                    <a href="tel:+4811123456789">+48 123 456 789</a>
+                </li>
+                <li>
+                    <img src="../../img/icons/placeholder.png" alt="" />
+                    <a href="http://maps.google.com/?q=Kraków+Miodowa+34" target="blank">Kraków, ul. Miodowa 34</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="dash__main">
+            <div class="med-padding-wrap">
+                <h1 class="heading-primary">
+                    Witaj <%= imie %> !
+                </h1>
+                <div class="upcoming u-margin-top-med">
+                </div>
+                <div class="pref u-margin-bottom-med u-margin-top-med">
+                    <h3 class="heading-tertiary">
+                        Preferencje
+                    </h3>
+                    <ul class="pref__list">
+                        <!-- TODO: TOGGLE SELCTED AND UNSELECTED CLASS ON SPANS -->
+                        <h4 class="heading-fourth">Jakie wycieczki Cię interesują?</h4>
+                        <span class="pref__list__elem--unselected">
+                            wypoczynek
+                        </span>
+                        <span class="pref__list__elem--unselected">
+                            zwiedzanie
+                        </span>
+                        <span class="pref__list__elem--unselected">
+                            aktywność
+                        </span>
+                        <div class="u-pararell">
+                            <span class="pref__list__elem--unselected disabled">
+                                <img src="img/icons/disabled_black.png" alt="" width="34px">
+                            </span> 
+                            <p>kliknij na to pole jeśli szukasz wycieczki z udogodnieniami dla osób z ograniczoną mobilnością</p>
+                        </div>
+                        <div class="u-pararell">
+                            <input type="checkbox" class="form__checkbox"> 
+                            <p>Wyrażam zgodę na otrzymywanie newslettera od naszej firmy</p>
+                        </div>
+                    </ul>
+                    
+                </div>
+            </div>
+        </main>
+        <aside class="aside">
+            <div class="aside__personal">
+                <h3 class="heading-tertiary">
+                    dane osobowe
+                </h3>
+                <ul>
+                    <li>email: <%= email %></li>
+                    <li>pełne imię: <%= imie %> <%= nazwisko %></li>
+                    <li>adres: <%= miasto %> ul. <%= ulica %> <%= dom %></li>
+                    <a href="/personal_data_form" target="_blank">
+                    <button class="btn btn--blue u-margin-top-small">Zmień</button>
+                    </a>
+                    <button class="btn btn--tame-red u-margin-top-small">
+                        <a href="/">
+                            Wyloguj
+                        </a>
+                    </button>
+                </ul>
+            </div>
+        </aside>
+        </div>
+        
+    </body>
+</html>
